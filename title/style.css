@@ -127,6 +127,14 @@ footer{
 .footericons{
     margin-left: 15px;
 }
+@media only screen and (min-width: 600px){
+    menu{
+        display: none;
+    }
+    #mobilefooter{
+        display: none;
+    }
+}
 @media only screen and (max-width: 860px){
     #logofooter{
         position:inherit;
@@ -141,10 +149,7 @@ footer{
     }
 }
 @media only screen and (max-width: 600px){
-    #logofooter{
-        position:inherit;
-    }
-    .nomobile{
+    nav, .nomobile{
         display: none;
     }
     article{
@@ -155,5 +160,53 @@ footer{
     }
     .containerarticle{
         width: 100%;
+    }
+    footer{
+        display: none;
+    }
+    Menu{
+        margin-right: 5%;
+    }
+    .options{
+        height: 37px;
+        width: auto;
+        color: white;
+        background-color: rgba(78, 128, 241, 1);
+        border-radius: 15px;
+        text-decoration: none;
+        padding: 5px 17px;
+        margin-left:10px;
+        font-size: 18px;
+    }
+    #mobilefooter{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;   
+        padding: 5%;
+    }
+    .containermobfooter{
+        display: flex;
+        justify-content: center;
+    }
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-right: 150px;
+    }
+    .mobileicons{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .navlink{
+        margin: 5%;
+        height: 37px;
+        width: 200%;
+        text-align: center;
+    }
+    .footericons{
+        margin: 5%;
     }
 }
