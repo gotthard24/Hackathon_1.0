@@ -51,7 +51,7 @@ nav{
     justify-content: center;
 }
 h1{
-    font-size: 10vh;
+    font-size: 6vw;
     color: white;
     width: 100%;
     margin-top: 5%;
@@ -76,7 +76,7 @@ h1{
     font-size: 18px;
 }
 h2{
-    font-size: 7vh;
+    font-size: 5vw;
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
@@ -102,7 +102,7 @@ h4{
     color: rgba(78, 128, 241, 1);
 }
 h3{
-    font-size: 5vh; 
+    font-size: 3vw; 
     margin-top: 3%;
 }
 .articletext{
@@ -122,7 +122,38 @@ footer{
 #logofooter{
     position: absolute;
     left: 50%;
+    max-width: 230px;
 }
 .footericons{
     margin-left: 15px;
+}
+@media only screen and (max-width: 860px){
+    #logofooter{
+        position:inherit;
+    }
+}
+@media only screen and (max-width: 720px){
+    #logofooter{
+        position:inherit;
+    }
+    .nomobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    #logofooter{
+        position:inherit;
+    }
+    .nomobile{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+    }
+    .imgarticle{
+        width: 100%;
+    }
+    .containerarticle{
+        width: 100%;
+    }
 }
