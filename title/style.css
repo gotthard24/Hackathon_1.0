@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
 }
 body{
     background-color: rgb(242, 243, 245);
@@ -55,6 +56,7 @@ h1{
     color: white;
     width: 100%;
     margin-top: 5%;
+    font-family: "Sora", sans-serif;
 }
 .maintext{
     color: white;
@@ -80,6 +82,7 @@ h2{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
+    font-family: "Sora", sans-serif;
 }
 article{
     display: flex;
@@ -100,10 +103,12 @@ article{
 h4{
     font-size: 18px;
     color: rgba(78, 128, 241, 1);
+    font-family: "Sora", sans-serif;
 }
 h3{
     font-size: 3vw; 
     margin-top: 3%;
+    font-family: "Sora", sans-serif;
 }
 .articletext{
     color: rgba(0, 0, 0, 0.5);
