@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+body{
+    background-color: rgb(242, 243, 245);
+}
+header{
+    background-color: white;
+    width: 100%;
+    height: 83px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoheader{
+    max-width: 144px;
+    margin-left:5%;
+}
+nav{
+    margin-right: 5%;
+}
+.navlink{
+    height: 37px;
+    width: auto;
+    color: white;
+    background-color: rgba(78, 128, 241, 1);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 5px 17px;
+    margin-left:10px;
+    font-size: 18px;
+}
+.mainsection{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(180deg, #588BFF 0%, #1E4AAD 100%);
+}
+#hiimg{
+    width: 40%;
+    position: relative;
+    right: 5%;
+}
+.containermain{
+    display: flex;
+    width: 55%;
+    margin-left: 5%;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 6vw;
+    color: white;
+    width: 100%;
+    margin-top: 5%;
+    font-family: "Sora", sans-serif;
+}
+.maintext{
+    color: white;
+    width: 70%;
+    font-size: 18px;
+    line-height: 130%;
+    padding: 5% 0%;
+}
+.buttonlink{
+    height: 51px;
+    width: 197px;
+    color: white;
+    background-color: rgba(78, 128, 241, 1);
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 12px 24px 12px 24px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+h2{
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: "Sora", sans-serif;
+}
+article{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    background-color: white;
+    border-radius: 30px;
+}
+.imgarticle{
+    width: 50%;
+}
+.containerarticle{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 7% 5% 3% 5%;
+}
+h4{
+    font-size: 18px;
+    color: rgba(78, 128, 241, 1);
+    font-family: "Sora", sans-serif;
+}
+h3{
+    font-size: 3vw; 
+    margin-top: 3%;
+    font-family: "Sora", sans-serif;
+}
+.articletext{
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 132px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+#logofooter{
+    position: absolute;
+    left: 50%;
+    max-width: 230px;
+}
+.footericons{
+    margin-left: 15px;
+}
+@media only screen and (min-width: 600px){
+    menu{
+        display: none;
+    }
+    #mobilefooter{
+        display: none;
+    }
+}
+@media only screen and (max-width: 860px){
+    #logofooter{
+        position:inherit;
+    }
+}
+@media only screen and (max-width: 720px){
+    #logofooter{
+        position:inherit;
+    }
+    .nomobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    nav, .nomobile{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+    }
+    .imgarticle{
+        width: 100%;
+    }
+    .containerarticle{
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
+    Menu{
+        margin-right: 5%;
+    }
+    .options{
+        height: 37px;
+        width: auto;
+        color: white;
+        background-color: rgba(78, 128, 241, 1);
+        border-radius: 15px;
+        text-decoration: none;
+        padding: 5px 17px;
+        margin-left:10px;
+        font-size: 18px;
+    }
+    #mobilefooter{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;   
+        padding: 5%;
+    }
+    .containermobfooter{
+        display: flex;
+        justify-content: center;
+    }
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-right: 150px;
+    }
+    .mobileicons{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .navlink{
+        margin: 5%;
+        height: 37px;
+        width: 200%;
+        text-align: center;
+    }
+    .footericons{
+        margin: 5%;
+    }
+}
