@@ -2,9 +2,9 @@
     border: solid 2px black;
 } */
 
-body{
-    margin: 0;
-    padding: 0;
+body *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -62,14 +62,13 @@ body{
 }
 .start_body{
     color: #FFFFFF;
-    width: 60%;
-    border: solid 2px black;
+    min-width: 50%;
+    max-width: 60%;
 }
 .start_title{
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: bold;
     font-family: "Sora", sans-serif;
-    border: solid 2px black;
 }
 .start_description{
     font-size: 24px;
@@ -91,6 +90,143 @@ body{
     height: 24px;
 }
 
+.avatar{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#message1{
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 90px;
+    background-color: #D1D2D2;
+    border-radius: 51.06px;
+    font-size: 18px;
+}
+
+#message2{
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 90px;
+    background-color: #7EA6FF;
+    border-radius: 51.06px;
+    font-size: 18px;
+}
+
+.programming{
+    background-color: #F2F3F5;
+    background-image: url(sources/imgs/Programming/Matrix_BG.png);
+}
+.programming_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.block_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin: 40px;
+}
+
+.cards{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 88px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.card h3{
+    text-align: center;
+    line-height: auto;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+}
+
+.all_card_content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+}
+
+.price_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.price_content p{
+    color: #00000088;
+}
+
+.price{
+    font-family: "Sora", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.button_wrapper{
+    display: flex;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    padding: 8px 24px;
+    background-color: #588BFF;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.design{
+    background-image: url(sources/imgs/Design/Design_BG.png);
+    background-color: #588aff9d;
+}
+
+.design_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.marketing{
+    background-color: #F2F3F5;
+}
+
+.marketing_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.data{
+    background-color: #588aff9d;
+}
+
+.data_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .footer{
     background-color: rgb(255, 255, 255);
 }
@@ -108,4 +244,13 @@ body{
 }
 .footericons{
     margin-left: 15px;
+}
+
+@media only screen and (max-width: 1340px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        margin: 12px;
+    }
 }
