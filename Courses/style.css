@@ -240,12 +240,16 @@ input[type="text"] :hover{
     display: flex;
     justify-content: start;
     align-items: center;
-    color: white;
     padding: 8px 24px;
     background-color: #588BFF;
     border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
+}
+
+.button_link{
+    color: #fff;
+    text-decoration: none;
 }
 
 .design{
