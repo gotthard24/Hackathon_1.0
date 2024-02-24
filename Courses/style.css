@@ -1,12 +1,20 @@
 /* *{
     border: solid 2px black;
 } */
-
-body *{
+/* body{
     margin: 0px;
     padding: 0px;
+} */
+
+body, body *{   
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Sora", sans-serif;
 }
 
 .header{
@@ -44,6 +52,7 @@ body *{
 }
 
 .container{
+    height: 100%;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -53,22 +62,33 @@ body *{
 }
 
 .start{
+    display: flex;
+    align-items: center;
     background: linear-gradient(180deg, #588BFF 0%, #1E4AAD 100%);
+    height: 70vh;
 }
 .start_row{
-    margin: 0 auto;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
+/* .start_row{
+    border: solid 1px black;
+} */
 .start_body{
     color: #FFFFFF;
-    min-width: 50%;
+    display: flex;
+    flex-direction: column;
     max-width: 60%;
+    gap: 24px;
 }
 .start_title{
-    font-size: 3vw;
+    font-size: 48px;
     font-weight: bold;
     font-family: "Sora", sans-serif;
+}
+.start_title h1{
+    margin: 0 auto;
 }
 .start_description{
     font-size: 24px;
@@ -83,6 +103,14 @@ body *{
     font-size: 18px;
     color: #808080;
 }
+
+.start_imgs{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
 .search_icon{
     margin-left: 10px;
     margin-right: 10px;
@@ -90,12 +118,29 @@ body *{
     height: 24px;
 }
 
+input[type="text"] {
+    border: none;
+    outline: none;
+    color:#00000088;
+}
+
+input[type="text"] :hover{
+    border: none;
+    outline: none;
+    color:#00000000;
+}
+
 .avatar{
     margin-left: 5%;
     margin-right: 5%;
 }
 
+#jew_img{
+    z-index: 1;
+}
+
 #message1{
+    position: absolute;
     display: flex;
     align-items: center;
     width: 330px;
@@ -103,9 +148,12 @@ body *{
     background-color: #D1D2D2;
     border-radius: 51.06px;
     font-size: 18px;
+    left: -200px;
+    bottom: 175px;
 }
 
 #message2{
+    position: absolute;
     display: flex;
     align-items: center;
     width: 330px;
@@ -113,11 +161,15 @@ body *{
     background-color: #7EA6FF;
     border-radius: 51.06px;
     font-size: 18px;
+    z-index: 2;
+    right: -110px;
+    bottom: 55px;
 }
 
 .programming{
     background-color: #F2F3F5;
     background-image: url(sources/imgs/Programming/Matrix_BG.png);
+    background-size: cover;
 }
 .programming_row{
     display: flex;
@@ -130,7 +182,7 @@ body *{
     display: flex;
     justify-content: center;
     font-size: 48px;
-    margin: 40px;
+    margin: 64px;
 }
 
 .cards{
@@ -199,6 +251,7 @@ body *{
 .design{
     background-image: url(sources/imgs/Design/Design_BG.png);
     background-color: #588aff9d;
+    background-size: cover;
 }
 
 .design_row{
