@@ -1,11 +1,3 @@
-/* *{
-    border: solid 2px black;
-} */
-/* body{
-    margin: 0px;
-    padding: 0px;
-} */
-
 body, body *{   
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -86,6 +78,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 48px;
     font-weight: bold;
     font-family: "Sora", sans-serif;
+    z-index: 5;
 }
 .start_title h1{
     margin: 0 auto;
@@ -136,6 +129,9 @@ input[type="text"] :hover{
 }
 
 #jew_img{
+    position: relative;
+    scale: 0.8;
+    top: 58px;
     z-index: 1;
 }
 
@@ -304,10 +300,53 @@ input[type="text"] :hover{
 }
 
 @media only screen and (max-width: 1340px){
+    .start_imgs{
+        margin-top: 105px;
+        scale: 0.8;
+        right:100px;
+        bottom: -10px;
+    }
+
     .cards{
         display: flex;
         flex-direction: column;
         padding: 12px;
         margin: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .start_search{
+        width: 250px;
+    }
+
+    .start_title{
+        font-size: 20px;
+    }
+
+    .start_description{
+        font-size: 12px;
+    }
+
+    #message1{
+        visibility: hidden;
+    }
+
+    #message2{
+        visibility: hidden;
+    }
+
+    .navlink{
+        height: 26px;
+        width: auto;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    #logofooter{
+        visibility: hidden;
+    }
+    .footer_row{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
